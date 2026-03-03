@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة اختبارات الأورام</title>
+    <style>
+        :root {
+            --olive-green: #556B2F;
+            --light-beige: #F5F5DC;
+            --dark-gray: #2C3E50;
+            --white: #FFFFFF;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-beige);
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .welcome-card {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 10px solid var(--olive-green);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            color: var(--olive-green);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: var(--dark-gray);
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .start-btn {
+            background-color: var(--olive-green);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(85, 107, 47, 0.3);
+        }
+
+        .start-btn:hover {
+            background-color: #3d4d22;
+            transform: scale(1.05);
+        }
+
+        .info-footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .badge {
+            background: #e9e9d0;
+            color: var(--olive-green);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <div class="welcome-card">
+            <div class="badge">جامعة الكوفة - كلية الصيدلة</div>
+            <h1>اختبار الأورام وابيضاض الدم الحاد</h1>
+            <p>أهلاً بك في منصة الاختبار الشاملة. هذا الاختبار مصمم ليغطي 100 سؤال من أدق تفاصيل ملزمة المرحلة الخامسة لضمان استعدادك التام للامتحان.</p>
+            
+            <button class="start-btn" onclick="startQuiz()">ابدأ الاختبار الآن</button>
+
+            <div class="info-footer">
+                عدد الأسئلة: 100 سؤال MCQ • المصدر: ملزمة د. دنيا حبيب
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startQuiz() {
+            // هنا يمكنك وضع الرابط لملف الاختبار الآخر أو تفعيل كود الاختبار
+            alert("سيتم الآن نقلك إلى واجهة الـ 100 سؤال...");
+            // window.location.href = "quiz_page.html"; 
+        }
+    </script>
+
+</body>
+</html>
